@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}TODOを削除{% endblock %}
+
+{% block content %}
+<h1>TODOを削除</h1>
+<p>本当にこのTODOを削除しますか？: <strong>{{ todo.title }}</strong></p>
+<form method="post">
+    {% csrf_token %}
+    <button type="submit">削除</button>
+    <a href="{% url 'index' %}">キャンセル</a>
+</form>
+{% endblock %}

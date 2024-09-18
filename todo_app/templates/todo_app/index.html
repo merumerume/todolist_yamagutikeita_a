@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %}TODOリスト{% endblock %}
+
+{% block content %}
+<h1>TODOリスト</h1>
+<a href="{% url 'add_todo' %}">TODOを追加</a>
+
+<ul>
+    {% for todo in todos %}
+        <li>
+            <strong>{{ todo.title }}</strong> - {{ todo.due_date }} - 
+            {% if todo.priority == 'High' %}高
+            {% elif todo.priority == 'Medium' %}中
+            {% else %}低
+            {% endif %}
+            {% if todo.category %}
+                <br>カテゴリー: {{ todo.category }}
+            {% endif %}
+            {% if todo.tags.all %}
+                <br>タグ: 
+                {% for tag in todo.tags.all %}
+                    {{ tag.name }}{% if not forloop.last %}, {% endif %}
+                {% endfor %}
+            {% endif %}
+            {% if todo.comment %}  <!-- コメントが存在する場合のみ表示 -->
+                <br>コメント: {{ todo.comment }}
+            {% endif %}
+            <br><a href="{% url 'delete_todo' todo.id %}">削除</a>
+        </li>
+    {% empty %}
+        <li>TODO項目がまだありません。</li>
+    {% endfor %}
+</ul>
+
+<div id="calendar"></div>
+{% endblock %}

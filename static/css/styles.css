@@ -1,0 +1,70 @@
+/* 全体のレイアウト */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;  /* 水平方向に中央揃え */
+    align-items: center;  /* 垂直方向に中央揃え */
+    background-color: #f4f4f4;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* タイトルのスタイル */
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* フォームとボタンのスタイル */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* フォーム全体を中央に */
+}
+
+input, select, textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 400px;  /* フォームの最大幅 */
+}
+
+button {
+    padding: 10px;
+    font-size: 14px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 400px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* リンクのスタイル */
+a {
+    color: #007BFF;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
