@@ -4,10 +4,10 @@ Deprecated==1.2.14
 Django==4.2.7
 django-environ==0.11.2
 et-xmlfile==1.1.0
-future @ file:///System/Volumes/Data/SWE/Apps/DT/BuildRoots/BuildRoot7/ActiveBuildRoot/Library/Caches/com.apple.xbs/Sources/python3/python3-133.100.1.1/future-0.18.2-py3-none-any.whl
+future==0.18.2
 jaconv==0.3.4
 Janome==0.5.0
-macholib @ file:///System/Volumes/Data/SWE/Apps/DT/BuildRoots/BuildRoot7/ActiveBuildRoot/Library/Caches/com.apple.xbs/Sources/python3/python3-133.100.1.1/macholib-1.15.2-py2.py3-none-any.whl
+macholib==1.15.2
 numpy==1.26.4
 opencv-python==4.9.0.80
 openpyxl==3.1.2
@@ -17,10 +17,10 @@ pykakasi==2.2.1
 python-dateutil==2.9.0.post0
 pytz==2024.1
 romkan==0.2.1
-six @ file:///System/Volumes/Data/SWE/Apps/DT/BuildRoots/BuildRoot7/ActiveBuildRoot/Library/Caches/com.apple.xbs/Sources/python3/python3-133.100.1.1/six-1.15.0-py2.py3-none-any.whl
+six==1.15.0
 sqlparse==0.4.4
 typing_extensions==4.8.0
 tzdata==2024.1
 wrapt==1.16.0
-gunicorn==20.0.4 
+gunicorn==20.0.4
 uvicorn==0.15.0
