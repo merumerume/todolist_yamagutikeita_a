@@ -147,11 +147,3 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'your_email@gmail.com'  # Gmailアカウント
 EMAIL_HOST_PASSWORD = 'your_password'  # Gmailのパスワードまたはアプリパスワード
 DEFAULT_FROM_EMAIL = 'your_email@gmail.com'
-
-
-env = environ.Env() 
-SECRET_KEY = env('SECRET_KEY') 
-DEBUG = env('DEBUG')
-
-MIDDLEWARE = [ "django.middleware.security.SecurityMiddleware", "whitenoise.middleware.WhiteNoiseMiddleware"]
-ALLOWED_HOSTS = ['your-app-name.onrender.com']
